@@ -1,3 +1,11 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +18,7 @@
 body {
   font-family: sans-serif;
 }
+
 .container {
   width: 960px;
   margin: 0 auto;
@@ -28,20 +37,22 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 80px;
-  align-items: center;
-  justify-content: center;
 }
 
 /* ------------------------ */
 /* COMPONENT STYLES */
 /* ------------------------ */
+
+/* HEADER */
 header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 80px;
   margin-top: 48px;
-  align-items: center;
-  justify-content: center;
+}
+
+.header-text-box {
+  align-self: center;
 }
 
 h1 {
@@ -73,6 +84,7 @@ img {
 
 .testimonial-box {
   grid-column: 2 / -1;
+  align-self: center;
 }
 
 .testimonial-box h2 {
@@ -107,6 +119,9 @@ h3 {
 
 .chair-details li:last-child {
   margin-bottom: 0;
+}
+
+.chair-icon {
 }
 
 .chair-price {
